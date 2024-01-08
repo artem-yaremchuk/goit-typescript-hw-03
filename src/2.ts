@@ -24,12 +24,7 @@ class Employee {
 
 class Manager extends Employee {
   constructor(name: string, salary: number) {
-    super(name, "Marketing", salary);
-    this.increaseSalary();
-  }
-
-  private increaseSalary() {
-    this.salary += 10000;
+    super(name, "Marketing", salary + 10000);
   }
 }
 
